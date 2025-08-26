@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./images/teacher (1).png" />
+    <title>Maria Tikhomirova</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="hystmodal" id="myModal">
+      <div class="hystmodal__window">
+        <button data-hystclose class="hystmodal__close">✖</button>
+
+        <div class="content"></div>
+      </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="user">
+            <div class="user__avatar">
+              <img src="./images/teacher.png" alt="" />
+            </div>
+            <div class="user__content">
+              <div class="user__name">Maria <br />Tikhomirova</div>
+              <div class="user__prof">An English Teacher</div>
+            </div>
+          </div>
+
+          <nav class="nav" id="nav">
+            <a class="nav__link" id="work" href="#">work</a>
+            <a class="nav__link" id="aboutMe" href="#">about me</a>
+            <a class="nav__link" id="contact" href="#">contact</a>
+            <a
+              class="nav__link nav__link--btn"
+              href="#"
+              data-modal="#modal_hire_me"
+              >hire me</a
+            >
+          </nav>
+
+          <!-- моя работа -->
+          <!-- Само модальное окно -->
+          <div id="modalMyResume" class="modal">
+            <div class="modal-content">
+              <span id="closeMyResume" class="close">&times;</span>
+              <h2>My Resume</h2>
+              <img
+                src="./images/Resume.jpg"
+                alt="Resume"
+                style="width: 100%; max-width: 500px"
+              />
+            </div>
+          </div>
+
+
+          <!--  -->
+
+          <button class="burger" type="button" id="navToggle">
+            <img class="burger__icon" src="images/burger.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <h2 class="intro__subtitle">Hello i'm</h2>
+            <h1 class="intro__title">Maria Tikhomirova</h1>
+            <div class="intro__text">An English Teacher</div>
+
+            <div class="social">
+              <a
+                class="social__link"
+                target="_blank"
+                href="https://www.line.me/th/"
+              >
+                <img
+                  src="./images/line.png"
+                  alt="Line"
+                  width="40"
+                  title="ID Line: line123"
+                />
+              </a>
+              <a
+                class="social__link"
+                target="_blank"
+                href="https://www.facebook.com/maria.tikhomirova.1048"
+              >
+                <img
+                  src="./images/face_book.png"
+                  alt="Facebook"
+                  width="40"
+                  title="ID Facebook: maria.tikhomirova.1048"
+                />
+              </a>
+              <a
+                class="social__link"
+                target="_blank"
+                href="https://www.instagram.com/mariatikhomirova/"
+              >
+                <img
+                  src="images/instagram.png"
+                  alt="Instagram"
+                  width="40"
+                />
+              </a>
+            </div>
+
+            <a
+              class="nav__link nav__link--btn"
+              href="#"
+              data-modal="#modal_hire_me"
+              >hire me</a
+            >
+            <button
+              
+              class="btn myResumeBtn" 
+              id="myResumeBtn"
+              type="button"
+              data-modal="#modal_resume"
+            >
+              SEE MY RESUME
+            </button>
+          </div>
+
+          <img class="intro__photo" src="images/maria.png" alt="" />
+        </div>
+        <!-- /.intro__inner -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Works -->
+    <div class="works">
+      <div class="container">
+        <div class="works__nav">
+          <a class="works__nav-link" href="#" data-filter="all">All</a>
+          <a class="works__nav-link" href="#" data-filter="English">English</a>
+          <a class="works__nav-link" href="#" data-filter="Math">Math </a>
+          <a class="works__nav-link" href="#" data-filter="Science">Science</a>
+        </div>
+
+        <div class="portfolio" id="portfolio">
+          <div class="portfolio__col" data-cat="English">
+            <div class="work" data-modal="#modal_project_1">
+              <img class="work__image" src="./images/lesson.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">category: English</div>
+                <div class="work__title">
+                  English Lesson
+                  <time class="work__date" datetime="2025-11-22 19:00"
+                    >2025</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="English">
+            <div class="work" data-modal="#modal_project_1">
+              <img class="work__image" src="./images/lesson.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">category: English</div>
+                <div class="work__title">
+                  English Lesson
+                  <time class="work__date" datetime="2025-11-22 19:00"
+                    >2025</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="Math">
+            <div class="work" data-modal="#modal_project_1">
+              <img class="work__image" src="./images/lesson.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">category: Math</div>
+                <div class="work__title">
+                  Math Lesson
+                  <time class="work__date" datetime="2025-11-22 19:00"
+                    >2025</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="Science">
+            <div class="work" data-modal="#modal_project_1">
+              <img class="work__image" src="./images/lesson.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">category: Science</div>
+                <div class="work__title">
+                  Science Lesson
+                  <time class="work__date" datetime="2025-11-22 19:00"
+                    >2025</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="Science">
+            <div class="work" data-modal="#modal_project_1">
+              <img class="work__image" src="./images/lesson.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">category: Science</div>
+                <div class="work__title">
+                  Science Lesson
+                  <time class="work__date" datetime="2025-11-22 19:00"
+                    >2025</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="Math">
+            <div class="work" data-modal="#modal_project_1">
+              <img class="work__image" src="./images/lesson.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">category: Math</div>
+                <div class="work__title">
+                  Math Lesson
+                  <time class="work__date" datetime="2025-11-22 19:00"
+                    >2025</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.portfolio -->
+
+        <div class="text-center">
+          <a class="btn btn--sm" href="#">LOAD MORE WORK</a>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.works -->
+
+    <!-- About -->
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__photo">
+            <img class="img" src="images/Maria.png" alt="" />
+          </div>
+
+          <div class="about__content">
+            <h3 class="about__title">about me</h3>
+            <h2 class="about__bigtitle">WHO AM I</h2>
+            <div class="about__text">
+              <p>
+                My name is Marry, and I work at a school with children. Teaching has always 
+                been more than just a job for me — it is my true passion. I love spending time with kids, 
+                helping them discover new things, and watching their progress every day.
+              </p>
+              <p>
+                Working with children inspires me because every lesson brings joy, challenges, and smiles. 
+                I believe that education is not only about giving knowledge but also about supporting young minds, 
+                encouraging curiosity, and helping them believe in themselves.
+              </p>
+              <p>
+                I enjoy creating lessons that are interesting and engaging, using different activities so that every student can feel involved and motivated. <br> 
+                My greatest reward is seeing the happiness in a child’s eyes when they learn something new or succeed in something they thought was difficult.<br> For me, being a teacher is not only about teaching—it is about guiding, inspiring, and making a positive difference in the lives of children. 
+                I am proud to be part of their journey and to help them grow into confident, kind, and capable people. перевод
+              </p>
+            </div>
+            <a class="btn" href="#" 3 data-modal="#modal_hire_me">HIRE ME</a>
+            <button class="btn myResumeBtn" data-modal="#modal_resume_down" type="button">SEE MY RESUME</button>
+          </div>
+          <!-- /.about__content -->
+        </div>
+        <!-- /.about__inner -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__credits">
+            <div class="footer__copyright">
+              &copy; 2018 UI43 - Free Templates
+            </div>
+
+            <div class="footer__social">
+              <a href="#" target="_blank">
+                <img src="images/behance-gray.svg" width="24" alt="" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="images/dribbble-gray.svg" width="18" alt="" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="images/linkedin-gray.svg" width="18" alt="" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="images/fb-gray.svg" height="18" alt="" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="images/instagram-gray.svg" width="18" alt="" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="images/twitter-gray.svg" width="20" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- /.footer__credits -->
+
+          <nav class="footer__nav">
+            <a class="footer__nav-link" href="#">Work</a>
+            <a class="footer__nav-link" href="#">About me</a>
+            <a class="footer__nav-link" href="#">Contact</a>
+            <a class="footer__nav-link footer__nav-link--btn" href="#"
+              >Hire me</a
+            >
+          </nav>
+        </div>
+        <!-- /.footer__inner -->
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    
+
+    <div class="modal" id="modal_resume">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="images/close.png" alt="Close" />
+        </button>
+
+        <!-- /.modal__content -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    
+        </div>
+        <!-- /.contact -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div> 
+    <!-- /.modal -->
+
+    <!-- JS -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
